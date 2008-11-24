@@ -1,40 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Reporting bugs</title>
+	<title>Tippek a hibajelentéshez</title>
 	<link rel="stylesheet" type="text/css" href="welcome.css">
 </head>
 <body lang="en-US">
 
 <div class="logo">
 	<img src="welcome-images/logo.png" alt="logo">
-	<div class="title">Reporting bugs</div>
+	<div class="title">Tippek a hibajelentéshez</div>
 </div>
 <div class="topnav">
 	<p>
-		<a href="welcome.html">Welcome</a>
+		<a href="welcome-hu.html">Üdvözlés</a>
 	</p>
 </div>
 
 <div class="content">
 
-<h2>Reporting bugs</h2>
-<p>Since our developers are unable to test every hardware combination, nor every different way of interacting with the operating system, we are relying on you to give us some input on how things work at your end. Since this is a very early product, it is very likely that you will encounter bugs. We thank you for taking the time to report these.<br><br>
-Please follow these guidelines to create helpful bug reports:</p>
+<h2>Tippek a hibajelentéshez:</h2>
+<p>Mivel fejlesztőink képtelenek az összes létező hardware-en különbözőképpen kipróbálni a rendszert, így Önre támaszkodva várjuk az esetlegesen felmerülő hibákat. A rendszer igen korai változatára való tekintettel nagy esélye van annak, hogy Ön legalább egy hibával biztosan találkozni fog. Köszönettel fogadjuk, ha időt szán a hibák bejelentésére.<br><br>
+A pontos hibajelentéshez ezeket az irányadó sorokat ajánljuk:</p>
 
-<ol><li>Before reporting a bug please <a href="http://dev.haiku-os.org/query?status=new&status=assigned&status=reopened&status=closed&summary=~text+you+want+to+search+for&order=priority">make sure</a> that it does not yet exist. You can also use the <a href="http://dev.haiku-os.org/search?q=&noquickjump=1&ticket=on">search</a> function for this.<br><br></li>
-<li>After you have established this is a unique bug, make your information as accurate as possible:<br><br>
+<ol><li>Mielőtt bejelentené a talált hibát <a href="http://dev.haiku-os.org/query?status=new&status=assigned&status=reopened&status=closed&summary=~text+you+want+to+search+for&order=priority">bizonyosodjon meg</a> róla, hogy még senki nem jelentette be Ön előtt. Ebben a <a href="http://dev.haiku-os.org/search?q=&noquickjump=1&ticket=on">kereső</a> segítségére lehet. <br><br></li>
+<li>Miután bebizonyosodott, hogy egy felfedezetlen hibával áll szemben, a lehető legpontosabban legyen szíves leírni a hibaokot és a környezetet:<br><br>
 <ul>
-<li>Include basic information such as how you are testing Haiku (on real hardware, on VMWare, on QEMU, etc.).<br><br></li>
-<li>Mention which revision from <acronym title="Subversion, the source code management system we use">SVN</acronym> you are running. You can find this information in '<i>About This System...</i>' from the Deskbar menu.<br><br></li>
-<li>Describe the problem you are experiencing. Try to be as accurate as you can: describe the actual behavior, and the behavior you expected.<br><br></li>
-<li>Describe what steps you need to perform in order to expose the bug. This will help developers reproduce the bug.<br><br></li>
-<li>Attach as much information as you have. If it is a GUI bug, or a bug in one of the applications, try to make a screen shot (the <tt>PRINT</tt> key files a <acronym title="Portable Network Graphics image format">PNG</acronym> into <tt>/boot/home/</tt>).<br>If it is a hardware problem, include a copy of the <tt>syslog</tt> file (just query for "<tt>syslog</tt>" to find it).<br><br></li>
-<li>When an application crashed, you should invoke the debugger from the alert that pops up. Entering "<tt>bt</tt>" into the launched debug Terminal, you create a "backtrace" that you should copy into your bugreport.</li>
+<li>Adja meg milyen környezetben bukkant fel a hiba (igazi hardware-en, VMWare-ben, QEMU-ban, vagy egyéb rendszeren futtatva).<br><br></li>
+<li>Jelölje meg melyik <acronym title="Subversion, azaz a kódfelügyelő rendszer, melyet alkalmazunk">SVN-t</acronym> használja. Ezt a Deskbar menüből, az '<i>About This System...</i>' gombra kattintva tudhatja meg.<br><br></li>
+<li>Próbálja pontosan meghatározni a hibát, a hibaokot. Írja le mi történik, hogyan idézhető elő a hiba.<br><br></li>
+<li>Írja le pontosan a hiba előidézéséhez szükséges lépéseket. Ennek segítségével a fejlesztők könnyűszerrel előidézhetik a hibát.<br><br></li>
+<li>Igyekezzen a lehető legtöbb adattal szolgálni! Ha a hiba például a grafikus felületen következik be, úgy próbáljon meg képernyőképet készíteni róla (a <tt>Print Screen</tt> gomb megnyomásával a képernyő tartalma a <tt>/boot/home/</tt> könyvtárba kerül <acronym title="Portable Network Graphics, azaz hordozható hálózati képformátum">PNG-formátumban</acronym>).<br>Ha viszont hardware-hibával áll szemben, kérjük mellékelje a <tt>syslog</tt>-állományt (keressen rá a "<tt>syslog</tt>"-ra, meg fogja találni).<br><br></li>
+<li>A program lefagyásakor ajánlatos előhívni a hibakeresőt a megjelenő lehetőségek közül. A felbukkanó terminálba a "<tt>bt</tt>" parancs megadásával egy visszakövetési-állományt hozhat létre, melyet (ha lehetséges) csatolnia kell a hibajelentéséhez.</li>
 </ul></li><br>
-<li>After the bug has been reported, a developer will look at your bug and try to classify it. Remember, we are all volunteers, and as such, sometimes a bug report might go unanswered for a while. Adding new information when it becomes available usually helps getting a bug picked up quicker, but do not try to 'bump' the bug up by adding non-descriptive comments.<br><br></li>
-<li>Remember, reporting a bug is not something you spend a little time on and then you are done. If you reported a bug, then you are part of the Haiku development process. Developers might come up with questions while they are trying to fix your bug. Please stay around to answer these. Consider your participation 'done' when the bug is marked as 'fixed'. Together we can improve Haiku, bit by bit. 
+<li>A hiba bejelentését követően az egyik fejlesztő megvizsgálja a hibát és hitelesíti azt. Ne feledje, mi mindannyian szabadidejünkből, önszántunkból tesszük azt, amit teszünk, így a hibák hitelesítésének folyamata és azok javítása eltarthat egy darabig. Hasznos, ha idővel új információkkal szolgál a hiba viselkedését illetően, de felesleges dolgok hozzáfűzésével csak ronthat a helyzeten.<br><br></li>
+<li>A hibajelentés menete nem csak úgy hasraütésszerűen működik. Ha hibát kíván bejelenteni, azt tegye a lehető legalaposabban. Egy adott hiba bejelentésével Ön a Haiku fejlesztői tagjává válik. A feljesztők esetlegesen utánakérdezhetnek a talált hibának. Segítse őket abban, hogy mihamarább megtalálják a megoldást a hibára! Akkor tekintse befejezettnek a részvételét, amikor a hiba "javított" állapotba került. Ne feledje, együtt lépésről-lépésre javíthatunk a Haikun! 
 </li>
 </ol>
 
@@ -42,7 +42,7 @@ Please follow these guidelines to create helpful bug reports:</p>
 
 <div class="bottomnav">
 	<p>
-		<a href="welcome.html">Welcome</a>
+		<a href="welcome-hu.html">Üdvözlés</a>
 	</p>
 </div>
 
