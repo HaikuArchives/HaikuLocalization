@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="../welcome/welcome.css">
+</head>
+<body lang="en-US">
+
+<div class="logo">
+	<img src="../welcome/welcome-images/logo.png" alt="logo">
+	<div class="title">Индексы</div>
+</div>
+<div class="topnav">
+	<p>
+		<a href="contents-ru.html">Содержание</a>
+		&nbsp;&nbsp;&nbsp;
+		Предыдущий: <a href="attributes.html">Атрибуты</a>
+		&nbsp;&nbsp;&nbsp;
+		Следующий: <a href="queries.html">Запросы</a>
+	</p>
+</div>
+
+<div class="content">
+
+
+<p><a href="attributes.html">Атрибуты</a> и <a href="queries.html">Запросы</a> - ключевы возможности Haiku. В то время как атрибуты полезны как таковые, для 
+отображения дополнительной информации о файле, при использовании запросов по ним, они лолжны быть индексированы. Индексирование помещает атрибуты в специальную
+таблицу поиска, которая облегчаат и ускоряет запросы.<br>
+Индексы являются частью файловой системы и хранятся отдельно для каждого тома/раздела.
+</p>
+
+<h2>Команды индексирования в Terminal</h2> 
+<p>Вот некоторые команды управления индексами: 
+<ul> 
+<li><b>lsindex</b> - Отображает индексированные атрибуты текущего тома/раздела.
+<p>Вот атрибуты индексируемы по-умолчани:<br>
+<pre>58 ~ -&gt;lsindex 
+BEOS:APP_SIG 
+MAIL:account 
+MAIL:cc 
+MAIL:chain 
+MAIL:draft 
+MAIL:flags 
+MAIL:from 
+MAIL:name 
+MAIL:pending_chain 
+MAIL:priority 
+MAIL:reply 
+MAIL:status 
+MAIL:subject 
+MAIL:thread 
+MAIL:to 
+MAIL:when 
+META:address 
+META:city 
+META:company 
+META:country 
+META:email 
+META:fax 
+META:group 
+META:hphone 
+META:name 
+META:nickname 
+META:state 
+META:url 
+META:wphone 
+META:zip 
+_signature 
+_status 
+_trk/qrylastchange 
+_trk/recentQuery 
+be:deskbar_item_status 
+last_modified 
+name 
+size 
+</pre></p></li> 
+<li><b>mkindex</b> - Добавляет атрибуты в индексы тома/раздела.
+<pre>Использование: mkindex [options] &lt;attribute&gt; 
+Создаёт новый индекс для указанного атрибута. 
+ 
+  -d, --volume=PATH     путь к тому, на котором добавляются индексы
+                        по-умолчанию - текущий том. 
+  -t, --type=TYPE       тип атрибута, который необходимо проиндексировать.  Один из &quot;int&quot;, 
+                        &quot;llong&quot;, &quot;string&quot;, &quot;float&quot;, or &quot;double&quot;. 
+                        По-умолчанию -  &quot;string&quot;. 
+      --copy-from       путь к тому с которого индексы должны быть скопированы. 
+  -v, --verbose         выводить иинформацию о создаваемых индексах 
+
+</pre> 
+<p><i><b>Заметка:</b> Только <b>новые</b> файлы с этими атрибутами будут автоматически проиндексированы!</i><br>
+Существующие фацлы должны быть добавлены вручную копировнаием и последующим удалением оригиналов. Альтернативно можно использовать данный инструмент
+<a href="http://www.bebits.com/app/2033" rel="nofollow">reindex</a>. 
+</p>
+</li> 
+<li><b>rmindex</b> - Удаляет атрибуты из индекса тома/раздела. 
+<pre>Использование: rmindex [OPTION]... INDEX_NAME 
+ 
+Удаляет индекс с именем INDEX_NAME с раздела диска. После того, как эта операция
+будет проделана, становится невозможным использовать систему запросов для поиска
+файлов с атрибутом INDEX_NAME. 
+ 
+  -d, --volume=PATH     путь к тому, с которого производится удаление
+                         индекса 
+  -h, --help            отображение этой справки и выход 
+  -p, --pattern         образец INDEX_NAME 
+  -v, --verbose         выводить иинформацию об удаляемых индексах 
+ 
+INDEX_NAME - имя атрибута файла. 
+ 
+Если том не указан, используется том текущей директории.
+.</pre> 
+</ul>
+
+</div>
+
+<div class="bottomnav">
+	<p>
+		<a href="contents-ru.html">Содержание</a>
+		&nbsp;&nbsp;&nbsp;
+		Предыдущий: <a href="attributes.html">Атрибуты</a>
+		&nbsp;&nbsp;&nbsp;
+		Следующий: <a href="queries.html">Запросы</a>
+	</p>
+</div>
+
+</body>
+</html>
