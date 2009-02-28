@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Boot Loader</title>
+	<link rel="stylesheet" type="text/css" href="../welcome/welcome.css">
+</head>
+<body lang="en-US">
+
+<div class="logo">
+	<img src="../welcome/welcome-images/logo.png" alt="logo">
+	<div class="title">Boot Loader</div>
+</div>
+<div class="topnav">
+	<p>
+		<a href="contents-ru.html">Содержание</a>
+		&nbsp;&nbsp;&nbsp;
+		Следующий: <a href="filesystem-layout-ru.html">Описание файловой системы</a>
+	</p>
+</div>
+
+<div class="content">
+
+<p>Загрузчик Haiku может помочь вам, когда у вас проблемы с оборудованием или есть необходимость выбрать, какую
+инсталяцию Haiku запустить, если их несколько (возможно инсталяция на CD или USB-флешке).<br>
+Это также сподручно после установки программного компонента, который не позволяет системе нормально загрузиться, чтобы удалить его.
+Оцпия <i>Disable user add-ons</i> описаная ниже запустит Haiku без установленных пользователем компонентов, например, драйвера. 
+</p><p>Чтобы войти в Boot Loader options вам необходимо нажать <tt>ПРОБЕЛ</tt> сразу после начала процесса загрузки. Очень легко упустить момент нажатия, так что зажмите клавишу до появлению меню.    
+ </p><br><p>
+</p><p>После входа вам предлагается меню:
+</p><p><table>
+<tr><td><b>Select boot volume</b></td><td>&nbsp;</td><td>Выбор инсталяции Haiku для запуска.</td></tr>
+<tr><td><b>Select safe mode options</b><br>
+</td><td>&nbsp;</td><td>Здесь много различных опции, которые можно попробовать в случае проблем с оборудованием. При перемещении указателя на опцию внизу экрана возникает краткое описание.   
+ <p><i>- Safe mode<br>
+- Disable user add-ons<br>
+- Disable IDE DMA<br>
+- Use fail-safe video mode<br>
+- Don't call the BIOS<br>
+- Disable APM<br>
+- Disable ACPI</br>
+- Enable on screen debug output</i>
+</p><p></p></td></tr>
+<tr><td class="onelinetop"><b>Select fail safe video mode</b></td><td>&nbsp;</td><td>Если вы выбрали опцию <i>Use fail-safe video mode</i>, вы сможете выбрать разрешение экрана и глубину цвета </td></tr>
+</table>
+</p><br><p>
+</p><p>После выбора одной или более опций, вы возвращаетесь в главное меню и продолжаете загрузку, которая преветствует вас такой заставкой:
+</p>
+<img src="bootloader-images/boot-screen.png" alt="boot-screen.png" width="480" height="300">
+<br>
+<p>Если всё в порядке, один за другим быстро загараются символы.  
+
+<!----- There's an old <a href="http://betips.net/1997/09/09/understanding-the-boot-icons/">BeOS Tip Server entry</a> by Scot Hacker, that's still valid, though some icons have changed since then:
+</p><p><table>
+<tr><td><b>Atom</b></td><td width="10">&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+<tr><td><b>Atom</b></td><td>&nbsp;</td><td>Indicates the handoff of the bootloader to the Haiku kernel.</td></tr>
+</table>
+----->
+</p>
+
+</div>
+
+<div class="bottomnav">
+	<p>
+		<a href="contents-ru.html">Содержание</a>
+		&nbsp;&nbsp;&nbsp;
+		Следующий: <a href="filesystem-layout-ru.html">Описание файловой системы</a>
+	</p>
+</div>
+
+</body>
+</html>
